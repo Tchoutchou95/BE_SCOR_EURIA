@@ -277,7 +277,7 @@ Model_spline <- function(data, age.min, age.max, out.step, method = "fmm", delay
                      xout = seq(from = age.min, to = age.max, by = out.step),
                      method = method)
   
-  correction_factor <- interval_size
+  correction_factor <- interval_size[model$x +1]
   if (length(correction_factor) == length(model$y)){
     model$y = model$y / correction_factor
   }
