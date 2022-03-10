@@ -19,7 +19,7 @@ To visualize the demo file, [Click here](https://docs.google.com/spreadsheets/d/
 The PCLM method is based on the composite link model, which extends standard generalized linear models. It implements the idea that the observed counts, interpreted as realizations from Poisson distributions, are indirect observations of a finer (ungrouped) but latent sequence. This latent sequence represents the distribution of expected means on a fine resolution and has to be estimated from the aggregated data. Estimates are obtained by maximizing a penalized likelihood. This maximization is performed efficiently by a version of the iteratively reweighted least-squares algorithm. Optimal values of the smoothing parameter are chosen by minimizing Bayesian or Akaike's Information Criterion
 ### Inputs datasets :
 
-The input dataset is supposed to have at least 2 columns, the first one is to be the abscissa, i.e. the bins under which values are count, and the second one is to be the counts. And eventually a last column for offset datas
+The input dataset is supposed to have at least 2 columns(X & Y}) ans separator is (;), the first one is to be the abscissa, i.e. the bins under which values are count, and the second one is to be the counts. And eventually a last column for offset datas (Offset)
 
 
 ### Inputs parameters :
