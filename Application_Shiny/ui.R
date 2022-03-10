@@ -225,7 +225,7 @@
           solidHeader = FALSE, title = "Loess summary", background = NULL, width = 12, status = "danger", collapsible = T, tableOutput("table_loess"),
           br(),
          
-          plotOutput("plot_loess"),
+          withSpinner(plotOutput("plot_loess"),type=5),
           screenshotButton(label = "Capture plot",id= "",filename = "Screenshot")
         ),
       )
