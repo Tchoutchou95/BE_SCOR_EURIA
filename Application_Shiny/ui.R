@@ -192,8 +192,8 @@
           br(),
           br(),
           
-          withSpinner(plotOutput("plot_spline"),type=5)
-          screenshotButton(label = "Capture plot",id= "screen_spline",filename = "Screenshot")
+          withSpinner(plotOutput("plot_spline"),type=5),
+          screenshotButton(label = "Capture plot",id= "",filename = "Screenshot")
         ),
       )
     )),
@@ -224,14 +224,9 @@
         box(
           solidHeader = FALSE, title = "Loess summary", background = NULL, width = 12, status = "danger", collapsible = T, tableOutput("table_loess"),
           br(),
-          br(),
-          fluidRow(
-            column(3,actionBttn( inputId = "download.data.4", label = "Download your data", style = "fill", size = "sm", color = "danger")),
-            column(3,offset = 1, textInput(inputId = "file_export_name.4",label= "Filename to export", placeholder = "Fitted data" )
-            )
-          ),
+         
           plotOutput("plot_loess"),
-          screenshotButton(label = "Capture plot",id= "screen_loess",filename = "Screenshot")
+          screenshotButton(label = "Capture plot",id= "",filename = "Screenshot")
         ),
       )
     )),
